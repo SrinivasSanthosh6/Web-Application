@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Information Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('background image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .container {
+    width: 35%;
+    margin: 3 auto;
+    padding: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,3.0);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+</style>
+</head>
+<body>
+
+<h1>USER DETAILS</h1>
+<br>
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Age</th>
+    <th>Date of Birth</th>
+  </tr>
+  <?php include 'fetch_users.php'; ?> <!-- Include PHP script to fetch user data -->
+</table>
+
+</body>
+</html>
